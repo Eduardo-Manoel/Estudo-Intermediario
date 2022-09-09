@@ -46,3 +46,6 @@ Cypress.Commands.add('gui_createIssue', issue => {
    cy.get('.block.milestone .edit-link').click()
    cy.contains(milestone.title).click()
  })
+ Cypress.Commands.add('project element', id =>{
+   cy.get('.js-confirm-danger-match').contains('project')
+ })

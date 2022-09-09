@@ -13,15 +13,13 @@ describe('Delete Project', () => {
         cy.login()
         cy.get('.active').contains('General').click()
         cy.get('#js-project-advanced-settings').contains('Expand').click()
-    })
-    it.only('Remover Projeto',() =>{
-        cy.get ('input[type="submit"][value="Remove project"]')
+        cy.get ('input[type="submit"][value="Remove project"]').click()
+       describe('project element', id => {
+        cy.get('#confirm_name_input').type(element)
+       })
+        
     })
 })
 
 
-// cy.get('input[type="radio"][value="feedback"]')
-//       .check()
-//       .click()
-//       .should('have.value', 'feedback')
 
