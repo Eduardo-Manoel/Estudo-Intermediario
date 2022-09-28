@@ -11,7 +11,7 @@
         "yarm": "^0.4.0"
     },
     "devDependencies": {
-        "cypress": "^10.7.0",
+        "cypress": "^10.9.0",
         "faker": "^5.5.3"
     }
 }
